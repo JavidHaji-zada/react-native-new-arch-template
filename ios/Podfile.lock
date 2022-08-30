@@ -74,6 +74,9 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.70.0-rc.3)
   - libevent (2.1.12)
+  - MMKV (1.2.14):
+    - MMKVCore (~> 1.2.14)
+  - MMKVCore (1.2.14)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -624,6 +627,9 @@ PODS:
   - React-jsinspector (0.70.0-rc.3)
   - React-logger (0.70.0-rc.3):
     - glog
+  - react-native-mmkv (2.4.3):
+    - MMKV (>= 1.2.13)
+    - React-Core
   - React-perflogger (0.70.0-rc.3)
   - React-RCTActionSheet (0.70.0-rc.3):
     - React-Core/RCTActionSheetHeaders (= 0.70.0-rc.3)
@@ -696,6 +702,8 @@ PODS:
     - React-jsi (= 0.70.0-rc.3)
     - React-logger (= 0.70.0-rc.3)
     - React-perflogger (= 0.70.0-rc.3)
+  - RNCClipboard (1.11.0):
+    - React-Core
   - RNReanimated (3.0.0-rc.2):
     - DoubleConversion
     - FBLazyVector
@@ -781,6 +789,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-mmkv (from `../node_modules/react-native-mmkv`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -795,6 +804,7 @@ DEPENDENCIES:
   - React-rncore (from `../node_modules/react-native/ReactCommon`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCClipboard (from `../node_modules/@react-native-clipboard/clipboard`)"
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -812,6 +822,8 @@ SPEC REPOS:
     - FlipperKit
     - fmt
     - libevent
+    - MMKV
+    - MMKVCore
     - OpenSSL-Universal
     - SocketRocket
     - YogaKit
@@ -863,6 +875,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-mmkv:
+    :path: "../node_modules/react-native-mmkv"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -891,6 +905,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCClipboard:
+    :path: "../node_modules/@react-native-clipboard/clipboard"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   Yoga:
@@ -915,6 +931,8 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 6a7b41f50b095e424e881a244926506b53261acc
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
+  MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: d916f831dc759d6c82f8ed4ba65c7d8560cca08e
@@ -933,6 +951,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 70734501469eb6a14da0d6a995b477ffc650f4e3
   React-jsinspector: a8186de0c2519e08573bfca97642e21448b6e0a7
   React-logger: 8ab3d18d882c00ac6e79bb8d3c050a3adc71f1b7
+  react-native-mmkv: 1265a348a4711097ba29c8bcefd5971f48220f2b
   React-perflogger: 211ab4691a41379d03e90c844f35d3db7177cced
   React-RCTActionSheet: 6b79f36d7667c73fcba4e041fae9eaa70ac6e1e0
   React-RCTAnimation: 7ca23cab72c101cfb58031548a77273fee235bdf
@@ -947,6 +966,7 @@ SPEC CHECKSUMS:
   React-rncore: 55e35fbadf994c9efa605a78bf9d1fb3f080bc55
   React-runtimeexecutor: 538c4d995c729b5247ac3149774f0a53f98570dd
   ReactCommon: f7fc6b8b10e8f16f65a8009be266cfc1478fb20d
+  RNCClipboard: 4b8bec7c195e27bcec746f52dff7601161683249
   RNReanimated: 10249ac81b456595273588ce2195198d85fcbd28
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 65fe91a246110ebd54e9c7388d98e90d861cb4e7
